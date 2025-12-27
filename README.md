@@ -59,7 +59,7 @@ npm install
 # .env (örnek)
 PORT=3000
 DB_PATH=database.db
-JWT_SECRET=çok-gizli-bir-deger
+JWT_SECRET=random deger
 NODE_ENV=development
 ```
 
