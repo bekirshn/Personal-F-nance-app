@@ -1,6 +1,5 @@
 # Personal Finance Web App
 
-
 Basit bir kişisel finans takip uygulaması (Node.js + Express + SQLite).
 
 Bu depo eğitim / proje amaçlı hazırlanmıştır. Sunucu API'si ve statik frontend `src/public` içinde bulunur.
