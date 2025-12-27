@@ -1,4 +1,4 @@
-# Personal-F-nance-ap
+# Personal Finance Web App
 
 
 Basit bir kişisel finans takip uygulaması (Node.js + Express + SQLite).
