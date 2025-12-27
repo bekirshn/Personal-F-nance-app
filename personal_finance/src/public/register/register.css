@@ -1,0 +1,14 @@
+:root{--bg:#f3f6fb;--card:#fff;--accent:#2563eb;--muted:#6b7280;--success:#16a34a}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:#111827}
+.reg-wrapper{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.reg-card{width:100%;max-width:520px;background:var(--card);padding:26px;border-radius:10px;box-shadow:0 8px 24px rgba(15,23,42,.06)}
+.title{margin:0 0 18px;font-size:20px}
+.label{display:block;margin:8px 0 6px;color:var(--muted);font-size:13px}
+input{width:100%;padding:10px 12px;border:1px solid #e5e7eb;border-radius:8px;font-size:15px}
+.actions{display:flex;align-items:center;justify-content:space-between;margin-top:16px}
+.btn-primary{background:var(--accent);color:#fff;border:0;padding:10px 14px;border-radius:8px;cursor:pointer}
+.link-back{color:var(--muted);text-decoration:none;font-size:14px}
+.message{margin-top:12px;min-height:20px}
+
+@media(max-width:480px){.reg-card{padding:18px}}

@@ -1,0 +1,80 @@
+:root{--bg:#f7fafc;--card:#fff;--accent:#2563eb;--muted:#6b7280;--danger:#dc2626}
+*{box-sizing:border-box}
+
+body{
+	margin:0;
+	font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	background:var(--bg);
+	color:#111827;
+	font-size:16px; /* base font size for readability */
+	line-height:1.45;
+}
+
+/* Topbar */
+.topbar{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:14px 22px;
+	background:#fff;
+	border-bottom:1px solid #e6edf3;
+}
+.topbar h1{margin:0;font-size:20px}
+.user-area{display:flex;align-items:center;gap:12px}
+.user-area #username{font-weight:600;color:var(--muted);font-size:15px}
+.user-area button{background:transparent;border:1px solid #e6edf3;padding:6px 10px;border-radius:8px;cursor:pointer}
+
+/* Main container */
+.container{
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+	gap:20px;
+	padding:24px;
+	max-width:1180px;
+	margin:20px auto;
+}
+
+.panel{
+	background:var(--card);
+	padding:18px;
+	border-radius:10px;
+	box-shadow:0 6px 18px rgba(2,6,23,0.06);
+}
+.panel h2{margin:0 0 12px;font-size:18px}
+
+/* Forms */
+.mini-form{display:flex;gap:10px;margin-bottom:14px;align-items:center}
+.mini-form input{flex:1;min-width:0;padding:10px;border:1px solid #e5e7eb;border-radius:10px;font-size:15px}
+.mini-form button{background:var(--accent);color:#fff;border:0;padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:600}
+
+.list{list-style:none;padding:0;margin:0}
+.list li{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:10px 12px;
+	border-radius:10px;
+	border:1px solid #f1f5f9;
+	margin-bottom:10px;
+	gap:12px;
+	flex-wrap:wrap;
+}
+.list .meta{font-size:13px;color:var(--muted)}
+.list .actions{display:flex;align-items:center}
+.list .actions button{margin-left:8px;padding:6px 8px;border-radius:8px;border:1px solid #e6edf3;background:#fff;cursor:pointer}
+
+/* Responsive adjustments */
+@media (max-width:900px){
+	.container{padding:16px;gap:14px}
+	.mini-form{flex-direction:column;align-items:stretch}
+	.mini-form button{width:100%}
+}
+
+@media (max-width:480px){
+	body{font-size:15px}
+	.topbar{padding:12px 14px}
+	.panel{padding:14px}
+	.list li{flex-direction:column;align-items:flex-start}
+	.list .actions{margin-top:8px}
+}
+
